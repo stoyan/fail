@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Uploads-select {
+  cursor: pointer;
+  border: 1px solid #222;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.Results-table {
+  width: 100%;
+}
+
+.Results-table td {
+  text-align: center;
+  border-top: 1px solid #222;
+  padding: 15px;
+}
+
+.Results-table th {
+  padding: 15px; 
+}
