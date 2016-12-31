@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
-let allTheFiles = []; // because f*ck React state :)
-
 class App extends Component {
   
   constructor() {
     super();
+    this.state = {
+      files: [],
+    };
     document.documentElement.ondragenter = e => e.preventDefault();
     document.documentElement.ondragover = e => e.preventDefault();
     document.documentElement.ondrop = e => {
@@ -24,8 +25,9 @@ class App extends Component {
     if (!files) {
       return;
     }
-    allTheFiles = allTheFiles.concat(files);
-    this.forceUpdate();
+    this.setState({
+      files: this.state.files.concat(files)
+    });
   }
   
   render() {
@@ -39,7 +41,7 @@ class App extends Component {
           <Uploads onChange={this.handleUploads.bind(this)} />
         </div>
         <div className="Tool-out">
-          <Results files={allTheFiles} />
+          <Results files={this.state.files} />
         </div>
       </div>
     );
