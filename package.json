@@ -3,17 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.4"
+    "react-scripts": "0.8.4",
+    "sw-precache": "^4.2.3"
   },
   "dependencies": {
-    "is-progressive": "^3.0.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp manifest.json build/ && sw-precache --root='build/' --static-file-globs='build/**/!(*map*)'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "./"
 }
