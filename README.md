@@ -3,3 +3,5 @@ File API Input Layer (FAIL) is a template-of-sorts for building one-off tools th
 http://phpied.com/fail for more info.
 
 https://phpied.com/files/fail for a demo.
+
+To create a new project using FAIL as template, see https://github.com/stoyan/craft
