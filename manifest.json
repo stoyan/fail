@@ -3,7 +3,7 @@
   "name": "File API Input Layer",
   "icons": [
     {
-      "src": "fail-icon.png",
+      "src": "icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
