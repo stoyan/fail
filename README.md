@@ -4,4 +4,8 @@ http://phpied.com/fail for more info.
 
 https://phpied.com/files/fail for a demo.
 
-To create a new project using FAIL as template, see https://github.com/stoyan/craft
+To create a new React app project using FAIL as a template, do
+
+    $ craft MyApp https://github.com/stoyan/fail/archive/master.zip
+
+(see https://github.com/stoyan/craft if the above command makes no sense)

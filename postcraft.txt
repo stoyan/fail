@@ -1,0 +1,1 @@
+Don't forget to edit `manifest.json` with your app's favorite colors.
